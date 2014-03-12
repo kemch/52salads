@@ -1,5 +1,46 @@
 @import "compass";
 
+// Regular	"quatro-slab"	400	normal	
+ 
+// Italic	"quatro-slab"	400	italic	
+ 
+// Medium	"quatro-slab"	500	normal	
+ 
+// Medium Italic	"quatro-slab"	500	italic	
+ 
+// Semibold	"quatro-slab"	600	normal	
+ 
+// Semibold Italic	"quatro-slab"	600	italic	
+ 
+// Bold	"quatro-slab"	700	normal	
+ 
+// Bold Italic	"quatro-slab"	700	italic	
+ 
+// Ultra Black	"quatro-slab"	900	normal	
+ 
+// Ultra Black Italic	"quatro-slab"	900	italic	
+ 
+@mixin quatro-slab {
+	font-family: "quatro-slab", georgia, serif;
+}
+
+// =================================
+// =================================
+// =================================
+// ========
+// ========    Resets
+// ========
+// =================================
+// =================================
+// =================================
+
+body {
+	@include quatro-slab;
+	font-size: 16px;
+}
+
+
+
 h1 {
   font-size: 10px;
 }
