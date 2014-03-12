@@ -1,0 +1,24 @@
+@import "compass";
+
+h1 {
+  font-size: 10px;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.salad {
+	float: left;
+	width: 20%;
+	@include box-sizing(border-box);
+	img {
+		display: block;
+	}
+}
