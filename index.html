@@ -3,18 +3,23 @@ layout: default
 title: Salads
 ---
 
+<div class="container">
+	<h1><span class="fa-stack">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+</span> 52 Salads</h1>
+	<p class="intro">
+		1 salad per week for 1 year.
+	</p>
+</div>
+
+{% comment %}
+
+{% include filters.html %}
+
+{% endcomment %}
+
+
 <div id="home">
-  <ul class="posts">
-    {% for post in site.posts reversed %}
-      <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li> -->
-      <li class="salad">
-      	{% if post.image %}
-      		<img src="/img/{{ post.image }}" alt="{{ post.title }}">
-      	{% else %}
-					<img src="http://placehold.it/500x500">
-      	{% endif %}
-      	<!-- <h1><a href="{{ post.url }}">{{ post.title }}</a></h1> -->
-      </li>
-    {% endfor %}
-  </ul>
+	{% include salad-list.html %}
 </div>

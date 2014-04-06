@@ -1,4 +1,5 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
-exclude: [_posts.old]
+exclude: [_posts.old, salads.psd, .gitignore, .editorconfig]
+permalink: /:categories/:title
