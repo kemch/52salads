@@ -14,6 +14,7 @@
 
 $white: #ffffff;
 $dark-green: darken(#34450E,15);
+$medium-green: lighten($dark-green,10);
 
 $smallest: 20em;
 $small: 30em;
@@ -66,11 +67,17 @@ h1 {
 }
 
 h2 {
-	font-size: 1.25em;
+	font-size: 3em;
 	font-weight: 700;
 	margin: 0;
+	line-height: 1;
 	@include breakpoint(0em $large) {
-		font-size: 1.125em;
+		font-size: 2em;
+	}
+	.post & {
+		border-bottom: 1px solid $medium-green;
+		padding: 20px 0;
+		line-height: 1.5;
 	}
 }
 
@@ -80,6 +87,20 @@ h3 {
 	margin: 0;
 	@include breakpoint(0em $large) {
 		font-size: 0.75em;
+	}
+	.post & {
+		font-size: 2em;
+	}
+}
+
+.not-yet {
+	h2 {
+		// color: darken($white,70);
+		color: $medium-green;
+	}
+	h3 {
+		// color: darken($white,70);
+		color: $medium-green;
 	}
 }
 
@@ -128,6 +149,12 @@ ul, ol {
 	}
 }
 
+.container {
+	max-width: 35em;
+	padding: 20px;
+	margin: 0 auto;
+}
+
 .hide {
 	display: none;
 }
@@ -135,8 +162,8 @@ ul, ol {
 .salad {
 	float: left;
 	width: 20%;
-	border-right: 1px solid lighten($dark-green,10);
-	border-bottom: 1px solid lighten($dark-green,10);
+	border-right: 1px solid $medium-green;
+	border-bottom: 1px solid $medium-green;
 
 	img {
 		display: block;
@@ -167,11 +194,16 @@ ul, ol {
 	color: $white;
 
 	&:hover {
-		.salad-thm {
-			img {
-				opacity: 0.5;
-				@include translateY(50%);
-			}
+		.salad-bg {
+			opacity: 0.5;
+			// @include translateY(50%);
+			@include background-size(125% auto);
+		}
+		.salad-summary {
+			@include translateY(0%);
+		}
+		.salad-info {
+			// @include translateY(-100%);
 		}
 	}
 }
@@ -190,26 +222,65 @@ ul, ol {
 	color: #fff;
 }
 
-.salad-thm {
+.salad-layout-block {
 	img {
 		position: relative;
 		z-index: 10;
-		opacity: 1;
-		// @include transition(opacity 0.2s ease);
-		// @include transition(transform 0.2s ease);
-		transition-property: opacity, transform;
-  	transition-duration: 0.2s, 0.4s;
-  	transition-timing-function: ease, ease;
-		@include translateY(0);
 	}
 }
 
-.salad-info {
+.salad-thm {
+	z-index: 12;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.salad-bg {
+	opacity: 1;
+	transition-property: opacity, transform, background-size;
+	transition-duration: 0.1s, 0.2s;
+	transition-timing-function: ease, ease;
+	@include translateY(0);
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 20;
+	@include background-size(100% auto);
+	background: {
+		repeat: no-repeat;
+		position: center center;
+	}
+}
+
+.salad-summary {
+	position: absolute;
+	z-index: 30;
+	bottom: 0;
+	color: $white;
 	padding: 20px;
+	@include translateY(100%);
+	@include transition(transform 0.4s ease);
+	.fa {
+		color: $white;
+	}
+}
+
+
+.salad-info {
+	padding: 20px 20px;
 	top: 0;
 	left: 0;
 	position: absolute;
-	z-index: 1;
+	z-index: 12;
+	// background-color:rgba($dark-green,0.5);
+	width: 100%;
+	height: 100%;
+	// @include translateY(0%);
+	// @include transition(transform 0.4s ease);
+	@include background-image(linear-gradient(135deg, rgba($dark-green, 0.8) 0%, rgba($dark-green, 0) 50%));
 }
 
 .salad-info-only {
