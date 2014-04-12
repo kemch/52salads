@@ -12,9 +12,12 @@
 // Ultra Black	"quatro-slab"	900	normal	
 // Ultra Black Italic	"quatro-slab"	900	italic	
 
+$black: #000000;
 $white: #ffffff;
+
 $dark-green: darken(#34450E,15);
 $medium-green: lighten($dark-green,10);
+$green: lighten($medium-green,26);
 
 $smallest: 20em;
 $small: 30em;
@@ -66,6 +69,20 @@ h1 {
 	}
 }
 
+.date {
+	@include inline-block;
+	float: right;
+	font-size: 50%;
+	position: relative;
+	top: 25px;	
+}
+
+.site-heading {
+	font-size: 2em;
+	margin-bottom: 0;
+	color: $green;
+}
+
 h2 {
 	font-size: 3em;
 	font-weight: 700;
@@ -74,10 +91,14 @@ h2 {
 	@include breakpoint(0em $large) {
 		font-size: 2em;
 	}
-	.post & {
-		border-bottom: 1px solid $medium-green;
-		padding: 20px 0;
-		line-height: 1.5;
+	.entry & {
+		color: $medium-green;
+		// border-bottom: 1px solid $medium-green;
+		padding:0;
+		line-height: 1;
+		font-size: 2em;
+		font-weight: 900;
+		margin: 0.67em 0;
 	}
 }
 
@@ -88,7 +109,7 @@ h3 {
 	@include breakpoint(0em $large) {
 		font-size: 0.75em;
 	}
-	.post & {
+	.entry & {
 		font-size: 2em;
 	}
 }
@@ -113,6 +134,19 @@ ul, ol {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+}
+
+.entry {
+	ul {
+		list-style: disc;
+		padding-left: 40px;
+	}
+
+	ol {
+		list-style: decimal;
+		padding-left: 40px;
+	}
+
 }
 
 .intro {
@@ -152,7 +186,12 @@ ul, ol {
 .container {
 	max-width: 35em;
 	padding: 20px;
-	margin: 0 auto;
+	// margin: 0 auto;
+	margin-left: 320px;
+}
+
+.container.post {
+	padding-top: 40px;
 }
 
 .hide {
@@ -201,6 +240,7 @@ ul, ol {
 		}
 		.salad-summary {
 			@include translateY(0%);
+			@include opacity(1);
 		}
 		.salad-info {
 			// @include translateY(-100%);
@@ -260,14 +300,62 @@ ul, ol {
 	z-index: 30;
 	bottom: 0;
 	color: $white;
-	padding: 20px;
-	@include translateY(100%);
-	@include transition(transform 0.4s ease);
+	padding: 20px 20px 0 20px;
+	// @include translateY(100%);
+	// @include transition(transform 0.4s ease);
+	@include opacity(0);
+	@include transition(opacity 0.4s ease);
+
 	.fa {
 		color: $white;
 	}
+
+	.link {
+		font-style: italic;
+		font-size: 85%;
+		font-weight: 400;
+		a {
+			color: $white;
+			text-decoration: none;
+		}
+	}
 }
 
+
+.post-side {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	padding-top: 40px;
+	background-color: lighten($green,10);
+	background-color: lighten(yellow,40);
+
+	h2 {
+		font-size: 11em;
+		padding: 20px 0 0 40px;
+		color: rgba($green,0.5);
+	}
+}
+
+.after-post {
+	border-top: 1px solid $green;
+	padding-top: 10px;
+	margin-top: 10px;
+	a {
+		color: $black;
+	}
+	ul {
+		@include clear;
+		text-align: center;
+	}
+
+	li {
+		@include inline-block;
+		margin: 5px 10px;
+	}
+}
 
 .salad-info {
 	padding: 20px 20px;
@@ -285,4 +373,21 @@ ul, ol {
 
 .salad-info-only {
 	padding: 20px;
+}
+
+.step {
+	line-height: 1.8;
+	border-radius: 50%;
+	background-color: $black;
+	color: $white;
+	@include inline-block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width:30px;
+	height:30px;
+	display: table-cell;
+	vertical-align: center;
+	text-align: center;
 }

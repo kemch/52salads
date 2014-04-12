@@ -15,7 +15,11 @@
 					<h3>{{ post.date | date: "%B %-d" }}</h3>
 				</div>
 				<div class="salad-summary">
-					<p>{{ post.summary}} <a href="{{ post.url }}"><i class="fa fa-link"></i></a></p>
+					<p>{{ post.summary}}<br>
+					<span class="link">
+						<a href="{{ post.url }}"><i class="fa fa-link"></i> permalink</a>
+					</span>
+					</p>
 				</div>
 			{% else %}
 				<div class="salad-layout-block">

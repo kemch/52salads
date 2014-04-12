@@ -3,3 +3,5 @@ markdown: redcarpet
 pygments: true
 exclude: [_posts.old, salads.psd, .gitignore, .editorconfig]
 permalink: /:categories/:title
+paginate: 5
+paginate_path: "/salads/page:num"
