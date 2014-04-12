@@ -1,9 +1,7 @@
-<div class="filters">
-	<div class="container">
-		<ul>
-			{% for tag in site.tags %}
-				<li><div class="tag" data-filter="{{ tag[0] | handleize | replace:' ','-' }}">{{ tag[0] }}</div></li>
-			{% endfor %}
-		</ul>
-	</div>
+<div class="filters" style="display:none;">
+	<ul>
+		{% for tag in site.tags %}
+			<li><div class="tag" data-filter="{{ tag[0] | handleize | replace:' ','-' }}">{{ tag[0] }}</div></li>
+		{% endfor %}
+	</ul>
 </div>

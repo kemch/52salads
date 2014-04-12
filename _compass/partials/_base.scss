@@ -165,19 +165,37 @@ ul, ol {
 	font-size: 0.70em;
 	ul {
 		@include clear;
+		text-align: center;
+		padding: 5px;
 	}
+	// li {
+	// 	float: left;
+	// 	width: 16%;
+	// 	padding: 2px 5px;	
+	// 	background-color: #FFF;
+	// 	cursor: pointer;
+	// 	&:hover {
+	// 		background-color: #DDD;
+	// 	}
+	// 	.tag {
+	// 	}
+	// 	.active {
+	// 		text-decoration: underline;
+	// 	}
+	// }
 	li {
-		float: left;
-		width: 16%;
-		padding: 2px 5px;	
-		background-color: #FFF;
+		display: inline;
+		padding: 2px 5px;
 		cursor: pointer;
-		&:hover {
-			background-color: #DDD;
-		}
 		.tag {
+			display: inline;
+			color: $green;
 		}
-		.active {
+
+		&:hover .tag {
+			color: $black;
+		}
+		.tag.active {
 			text-decoration: underline;
 		}
 	}
