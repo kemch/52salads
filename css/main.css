@@ -758,18 +758,39 @@ ul, ol {
   color: white;
 }
 /* line 313, ../_compass/partials/_base.scss */
+.salad-summary p {
+  font-size: 0.875em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.3;
+}
+/* line 320, ../_compass/partials/_base.scss */
+.salad-summary .summary {
+  margin-bottom: 0.75em;
+}
+/* line 323, ../_compass/partials/_base.scss */
+.salad-summary .summary span {
+  background-color: rgba(119, 158, 32, 0.5);
+}
+/* line 327, ../_compass/partials/_base.scss */
 .salad-summary .link {
   font-style: italic;
-  font-size: 85%;
   font-weight: 400;
+  margin-bottom: 0.75em;
 }
-/* line 317, ../_compass/partials/_base.scss */
+/* line 331, ../_compass/partials/_base.scss */
 .salad-summary .link a {
   color: white;
   text-decoration: none;
 }
+@media (min-width: 0em) and (max-width: 60em) {
+  /* line 337, ../_compass/partials/_base.scss */
+  .salad-summary p {
+    font-size: 0.75em;
+  }
+}
 
-/* line 325, ../_compass/partials/_base.scss */
+/* line 344, ../_compass/partials/_base.scss */
 .post-side {
   position: fixed;
   top: 0;
@@ -780,24 +801,24 @@ ul, ol {
   background-color: #97c829;
   background-color: #ffffcc;
 }
-/* line 335, ../_compass/partials/_base.scss */
+/* line 354, ../_compass/partials/_base.scss */
 .post-side h2 {
   font-size: 11em;
   padding: 20px 0 0 40px;
   color: rgba(119, 158, 32, 0.5);
 }
 
-/* line 342, ../_compass/partials/_base.scss */
+/* line 361, ../_compass/partials/_base.scss */
 .after-post {
   border-top: 1px solid #779e20;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 346, ../_compass/partials/_base.scss */
+/* line 365, ../_compass/partials/_base.scss */
 .after-post a {
   color: black;
 }
-/* line 349, ../_compass/partials/_base.scss */
+/* line 368, ../_compass/partials/_base.scss */
 .after-post ul {
   text-align: center;
 }
@@ -811,7 +832,7 @@ ul, ol {
 .after-post ul:after {
   clear: both;
 }
-/* line 354, ../_compass/partials/_base.scss */
+/* line 373, ../_compass/partials/_base.scss */
 .after-post li {
   display: inline-block;
   vertical-align: middle;
@@ -821,7 +842,7 @@ ul, ol {
   margin: 5px 10px;
 }
 
-/* line 360, ../_compass/partials/_base.scss */
+/* line 379, ../_compass/partials/_base.scss */
 .salad-info {
   padding: 20px 20px;
   top: 0;
@@ -835,12 +856,12 @@ ul, ol {
   background-image: linear-gradient(135deg, rgba(4, 5, 1, 0.8) 0%, rgba(4, 5, 1, 0) 50%);
 }
 
-/* line 374, ../_compass/partials/_base.scss */
+/* line 393, ../_compass/partials/_base.scss */
 .salad-info-only {
   padding: 20px;
 }
 
-/* line 378, ../_compass/partials/_base.scss */
+/* line 397, ../_compass/partials/_base.scss */
 .step {
   line-height: 1.8;
   border-radius: 50%;
