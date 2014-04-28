@@ -434,21 +434,21 @@ th {
   padding: 0;
 }
 
-/* line 49, ../_compass/partials/_base.scss */
+/* line 51, ../_compass/partials/_base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 53, ../_compass/partials/_base.scss */
+/* line 55, ../_compass/partials/_base.scss */
 body {
   font-family: "quatro-slab", georgia, serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* line 59, ../_compass/partials/_base.scss */
+/* line 61, ../_compass/partials/_base.scss */
 h1 {
   text-align: center;
   font-size: 5em;
@@ -456,14 +456,14 @@ h1 {
   font-weight: 900;
   margin-bottom: -10px;
 }
-/* line 65, ../_compass/partials/_base.scss */
+/* line 67, ../_compass/partials/_base.scss */
 h1 .fa-stack {
   font-size: 70%;
   top: -11px;
   margin-bottom: -10px;
 }
 
-/* line 72, ../_compass/partials/_base.scss */
+/* line 74, ../_compass/partials/_base.scss */
 .date {
   display: inline-block;
   vertical-align: middle;
@@ -476,14 +476,14 @@ h1 .fa-stack {
   top: 25px;
 }
 
-/* line 80, ../_compass/partials/_base.scss */
+/* line 82, ../_compass/partials/_base.scss */
 .site-heading {
   font-size: 2em;
   margin-bottom: 0;
   color: #779e20;
 }
 
-/* line 86, ../_compass/partials/_base.scss */
+/* line 88, ../_compass/partials/_base.scss */
 h2 {
   font-size: 3em;
   font-weight: 700;
@@ -491,12 +491,12 @@ h2 {
   line-height: 1;
 }
 @media (min-width: 0em) and (max-width: 60em) {
-  /* line 86, ../_compass/partials/_base.scss */
+  /* line 88, ../_compass/partials/_base.scss */
   h2 {
     font-size: 2em;
   }
 }
-/* line 94, ../_compass/partials/_base.scss */
+/* line 96, ../_compass/partials/_base.scss */
 .entry h2 {
   color: #24300a;
   padding: 0;
@@ -506,57 +506,57 @@ h2 {
   margin: 0.67em 0;
 }
 
-/* line 105, ../_compass/partials/_base.scss */
+/* line 107, ../_compass/partials/_base.scss */
 h3 {
   font-size: 0.875em;
   font-weight: 400;
   margin: 0;
 }
 @media (min-width: 0em) and (max-width: 60em) {
-  /* line 105, ../_compass/partials/_base.scss */
+  /* line 107, ../_compass/partials/_base.scss */
   h3 {
     font-size: 0.75em;
   }
 }
-/* line 112, ../_compass/partials/_base.scss */
+/* line 114, ../_compass/partials/_base.scss */
 .entry h3 {
   font-size: 2em;
 }
 
-/* line 118, ../_compass/partials/_base.scss */
+/* line 120, ../_compass/partials/_base.scss */
 .not-yet h2 {
   color: #24300a;
 }
-/* line 122, ../_compass/partials/_base.scss */
+/* line 124, ../_compass/partials/_base.scss */
 .not-yet h3 {
   color: #24300a;
 }
 
-/* line 128, ../_compass/partials/_base.scss */
+/* line 130, ../_compass/partials/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 133, ../_compass/partials/_base.scss */
+/* line 135, ../_compass/partials/_base.scss */
 ul, ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 140, ../_compass/partials/_base.scss */
+/* line 142, ../_compass/partials/_base.scss */
 .entry ul {
   list-style: disc;
   padding-left: 40px;
 }
-/* line 145, ../_compass/partials/_base.scss */
+/* line 147, ../_compass/partials/_base.scss */
 .entry ol {
   list-style: decimal;
   padding-left: 40px;
 }
 
-/* line 152, ../_compass/partials/_base.scss */
+/* line 154, ../_compass/partials/_base.scss */
 .intro {
   text-align: center;
   font-style: italic;
@@ -564,120 +564,124 @@ ul, ol {
   margin-top: 0;
 }
 
-/* line 159, ../_compass/partials/_base.scss */
+/* line 161, ../_compass/partials/_base.scss */
 .posts {
   background-color: #040501;
 }
-/* line 38, ../_compass/partials/_base.scss */
+/* line 40, ../_compass/partials/_base.scss */
 .posts:before, .posts:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 40, ../_compass/partials/_base.scss */
+/* line 42, ../_compass/partials/_base.scss */
 .posts:after {
   clear: both;
 }
 
-/* line 164, ../_compass/partials/_base.scss */
+/* line 166, ../_compass/partials/_base.scss */
 .filters {
   font-size: 0.70em;
 }
-/* line 166, ../_compass/partials/_base.scss */
+/* line 168, ../_compass/partials/_base.scss */
 .filters ul {
   text-align: center;
   padding: 5px;
 }
-/* line 38, ../_compass/partials/_base.scss */
+/* line 40, ../_compass/partials/_base.scss */
 .filters ul:before, .filters ul:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 40, ../_compass/partials/_base.scss */
+/* line 42, ../_compass/partials/_base.scss */
 .filters ul:after {
   clear: both;
 }
-/* line 186, ../_compass/partials/_base.scss */
+/* line 188, ../_compass/partials/_base.scss */
 .filters li {
   display: inline;
   padding: 2px 5px;
   cursor: pointer;
 }
-/* line 190, ../_compass/partials/_base.scss */
+/* line 192, ../_compass/partials/_base.scss */
 .filters li .tag {
   display: inline;
   color: #779e20;
 }
-/* line 195, ../_compass/partials/_base.scss */
+/* line 197, ../_compass/partials/_base.scss */
 .filters li:hover .tag {
   color: black;
 }
-/* line 198, ../_compass/partials/_base.scss */
+/* line 200, ../_compass/partials/_base.scss */
 .filters li .tag.active {
   text-decoration: underline;
 }
 
-/* line 204, ../_compass/partials/_base.scss */
+/* line 206, ../_compass/partials/_base.scss */
 .container {
   max-width: 35em;
   padding: 20px;
   margin-left: 320px;
 }
 
-/* line 211, ../_compass/partials/_base.scss */
+/* line 213, ../_compass/partials/_base.scss */
 .container.post {
   padding-top: 40px;
 }
 
-/* line 215, ../_compass/partials/_base.scss */
+/* line 217, ../_compass/partials/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 219, ../_compass/partials/_base.scss */
+/* line 221, ../_compass/partials/_base.scss */
 .salad {
   float: left;
   width: 20%;
   border-right: 1px solid #24300a;
   border-bottom: 1px solid #24300a;
+  -moz-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
 }
-/* line 225, ../_compass/partials/_base.scss */
+/* line 229, ../_compass/partials/_base.scss */
 .salad img {
   display: block;
 }
 @media (min-width: 0em) and (max-width: 60em) {
-  /* line 219, ../_compass/partials/_base.scss */
+  /* line 221, ../_compass/partials/_base.scss */
   .salad {
     width: 25%;
   }
 }
 @media (min-width: 0em) and (max-width: 48em) {
-  /* line 219, ../_compass/partials/_base.scss */
+  /* line 221, ../_compass/partials/_base.scss */
   .salad {
     width: 33%;
   }
 }
 @media (min-width: 0em) and (max-width: 30em) {
-  /* line 219, ../_compass/partials/_base.scss */
+  /* line 221, ../_compass/partials/_base.scss */
   .salad {
     width: 50%;
   }
 }
 @media (min-width: 0em) and (max-width: 30em) {
-  /* line 219, ../_compass/partials/_base.scss */
+  /* line 221, ../_compass/partials/_base.scss */
   .salad {
     width: 50%;
   }
 }
 @media (min-width: 0em) and (max-width: 20em) {
-  /* line 219, ../_compass/partials/_base.scss */
+  /* line 221, ../_compass/partials/_base.scss */
   .salad {
     width: 100%;
   }
 }
 
-/* line 245, ../_compass/partials/_base.scss */
+/* line 249, ../_compass/partials/_base.scss */
 .salad-wrap {
   position: relative;
   width: 100%;
@@ -686,7 +690,7 @@ ul, ol {
   background-color: #040501;
   color: white;
 }
-/* line 254, ../_compass/partials/_base.scss */
+/* line 258, ../_compass/partials/_base.scss */
 .salad-wrap:hover .salad-bg {
   opacity: 0.5;
   -moz-background-size: 125% auto;
@@ -694,7 +698,7 @@ ul, ol {
   -webkit-background-size: 125% auto;
   background-size: 125% auto;
 }
-/* line 259, ../_compass/partials/_base.scss */
+/* line 263, ../_compass/partials/_base.scss */
 .salad-wrap:hover .salad-summary {
   -moz-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -704,18 +708,18 @@ ul, ol {
   opacity: 1;
 }
 
-/* line 279, ../_compass/partials/_base.scss */
+/* line 283, ../_compass/partials/_base.scss */
 .fa-cutlery {
   color: #fff;
 }
 
-/* line 284, ../_compass/partials/_base.scss */
+/* line 288, ../_compass/partials/_base.scss */
 .salad-layout-block img {
   position: relative;
   z-index: 10;
 }
 
-/* line 290, ../_compass/partials/_base.scss */
+/* line 294, ../_compass/partials/_base.scss */
 .salad-thm {
   z-index: 12;
   position: absolute;
@@ -725,7 +729,7 @@ ul, ol {
   left: 0;
 }
 
-/* line 299, ../_compass/partials/_base.scss */
+/* line 303, ../_compass/partials/_base.scss */
 .salad-bg {
   opacity: 1;
   transition-property: opacity, transform, background-size;
@@ -747,7 +751,7 @@ ul, ol {
   background-position: center center;
 }
 
-/* line 316, ../_compass/partials/_base.scss */
+/* line 320, ../_compass/partials/_base.scss */
 .salad-summary {
   position: absolute;
   z-index: 30;
@@ -761,44 +765,92 @@ ul, ol {
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
 }
-/* line 327, ../_compass/partials/_base.scss */
+/* line 331, ../_compass/partials/_base.scss */
 .salad-summary .fa {
   color: white;
 }
-/* line 331, ../_compass/partials/_base.scss */
+/* line 335, ../_compass/partials/_base.scss */
 .salad-summary p {
   font-size: 0.875em;
   margin-bottom: 0;
   margin-top: 0;
   line-height: 1.3;
 }
-/* line 338, ../_compass/partials/_base.scss */
+/* line 342, ../_compass/partials/_base.scss */
 .salad-summary .summary {
   margin-bottom: 0.75em;
 }
-/* line 341, ../_compass/partials/_base.scss */
+/* line 345, ../_compass/partials/_base.scss */
 .salad-summary .summary span {
   background-color: rgba(119, 158, 32, 0.5);
 }
-/* line 345, ../_compass/partials/_base.scss */
+/* line 349, ../_compass/partials/_base.scss */
 .salad-summary .link {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 0.75em;
 }
-/* line 349, ../_compass/partials/_base.scss */
+/* line 353, ../_compass/partials/_base.scss */
 .salad-summary .link a {
   color: white;
   text-decoration: none;
 }
 @media (min-width: 0em) and (max-width: 60em) {
-  /* line 355, ../_compass/partials/_base.scss */
+  /* line 359, ../_compass/partials/_base.scss */
   .salad-summary p {
     font-size: 0.75em;
   }
 }
 
-/* line 362, ../_compass/partials/_base.scss */
+/* line 365, ../_compass/partials/_base.scss */
+.open {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+
+/* line 388, ../_compass/partials/_base.scss */
+.recipe-wrap {
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(4, 5, 1, 0.75);
+  color: #ffffcc;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 15px 50px 15px 200px;
+}
+/* line 404, ../_compass/partials/_base.scss */
+.recipe-wrap img {
+  display: none;
+}
+/* line 407, ../_compass/partials/_base.scss */
+.recipe-wrap h2 {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+/* line 412, ../_compass/partials/_base.scss */
+.recipe-wrap h4 {
+  margin: 0.5em 0;
+  font-weight: 400;
+  color: #97c829;
+}
+/* line 417, ../_compass/partials/_base.scss */
+.recipe-wrap .close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+
+/* line 425, ../_compass/partials/_base.scss */
 .post-side {
   position: fixed;
   top: 0;
@@ -809,38 +861,38 @@ ul, ol {
   background-color: #97c829;
   background-color: #ffffcc;
 }
-/* line 372, ../_compass/partials/_base.scss */
+/* line 435, ../_compass/partials/_base.scss */
 .post-side h2 {
   font-size: 11em;
   padding: 20px 0 0 40px;
   color: rgba(119, 158, 32, 0.5);
 }
 
-/* line 379, ../_compass/partials/_base.scss */
+/* line 442, ../_compass/partials/_base.scss */
 .after-post {
   border-top: 1px solid #779e20;
   padding-top: 10px;
   margin-top: 10px;
 }
-/* line 383, ../_compass/partials/_base.scss */
+/* line 446, ../_compass/partials/_base.scss */
 .after-post a {
   color: black;
 }
-/* line 386, ../_compass/partials/_base.scss */
+/* line 449, ../_compass/partials/_base.scss */
 .after-post ul {
   text-align: center;
 }
-/* line 38, ../_compass/partials/_base.scss */
+/* line 40, ../_compass/partials/_base.scss */
 .after-post ul:before, .after-post ul:after {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 40, ../_compass/partials/_base.scss */
+/* line 42, ../_compass/partials/_base.scss */
 .after-post ul:after {
   clear: both;
 }
-/* line 391, ../_compass/partials/_base.scss */
+/* line 454, ../_compass/partials/_base.scss */
 .after-post li {
   display: inline-block;
   vertical-align: middle;
@@ -850,7 +902,7 @@ ul, ol {
   margin: 5px 10px;
 }
 
-/* line 397, ../_compass/partials/_base.scss */
+/* line 460, ../_compass/partials/_base.scss */
 .salad-info {
   padding: 20px 20px;
   top: 0;
@@ -864,12 +916,12 @@ ul, ol {
   background-image: linear-gradient(135deg, rgba(4, 5, 1, 0.8) 0%, rgba(4, 5, 1, 0) 50%);
 }
 
-/* line 411, ../_compass/partials/_base.scss */
+/* line 474, ../_compass/partials/_base.scss */
 .salad-info-only {
   padding: 20px;
 }
 
-/* line 415, ../_compass/partials/_base.scss */
+/* line 478, ../_compass/partials/_base.scss */
 .step {
   line-height: 1.8;
   border-radius: 50%;

@@ -18,6 +18,8 @@ $white: #ffffff;
 $dark-green: darken(#34450E,15);
 $medium-green: lighten($dark-green,10);
 $green: lighten($medium-green,26);
+$light-green: lighten($green,10);
+$yellowish: lighten(yellow,40);
 
 $smallest: 20em;
 $small: 30em;
@@ -222,6 +224,8 @@ ul, ol {
 	border-right: 1px solid $medium-green;
 	border-bottom: 1px solid $medium-green;
 
+	@include transition(width 0.2s ease);
+
 	img {
 		display: block;
 	}
@@ -358,6 +362,65 @@ ul, ol {
 	}
 }
 
+.open {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+
+	// .salad-summary {
+	// 	@include background-size(auto auto);
+	// 	background-position: top left;
+	// }
+}
+
+#recipe {
+	// position: fixed;
+	// top: 0;
+	// left: auto;
+	// right: auto;
+	// bottom: 0;
+	// z-index: 100;
+	// width: 100%;
+	// overflow-y:scroll;
+ //  overflow-x:hidden;
+}
+
+.recipe-wrap {
+	position: fixed;
+	top: 0;
+	left: auto;
+	right: auto;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+	overflow-y:scroll;
+  overflow-x:hidden;
+	background-color: rgba($dark-green,0.75);
+	// position: relative;
+	color: $yellowish;
+	font-size: 1.5em;
+	font-weight: 100;
+	padding: 15px 50px 15px 200px;
+	img {
+		display: none;
+	}
+	h2 {
+		position: fixed;
+		top: 25px;
+		left: 25px;
+	}
+	h4 {
+		margin: 0.5em 0;
+		font-weight: 400;
+		color: $light-green;
+	}
+	.close {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		color: $white;
+	}
+}
 
 .post-side {
 	position: fixed;

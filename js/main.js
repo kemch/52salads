@@ -1,3 +1,35 @@
+$(function(){
+	
+	var url, t, s, n;
+	
+	$('.salad-link').click(function(e) {
+		t = $(this); 
+		s = t.attr('data-salad'); // id of salad
+		console.log(s);
+		n = $('#' + s + ' h2').text();
+		console.log(n);
+		url = t.attr('data-href'); // ajax url
+		$('body').toggleClass('dim');
+		// $('#' + s).attr('style','width:100%;').addClass('open');
+		$.ajax({
+				url: url,
+				cache: false
+			})
+			.done(function(html) {
+				$('#recipe').html(html);
+				$('.recipe-wrap h2').html(n);
+				$('.close').click(function (e) {
+					$('#recipe').html("");
+					$('body').toggleClass('dim');
+					return false;
+					e.preventDefault();
+				});
+			});
+		return false;
+		e.preventDefault();
+	});
+
+});
 
 var tag = $('.tag');
 var item = $('.salad');
